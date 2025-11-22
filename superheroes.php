@@ -68,7 +68,6 @@ $superheroes = [
 
     <?php $query = htmlspecialchars(trim($_REQUEST['query'])); ?>
     <?php if (empty($query)==TRUE): ?>
-        <h1><?= "Query is empty"; ?></h1>
         <ul>
             <?php foreach ($superheroes as $superhero): ?>
             <li><?= $superhero['alias']; ?></li>

@@ -4,19 +4,27 @@
         src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
         crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="app.js"></script>
 </head>
 <body>
-    <form id="myform" action="superheroes.php" method="POST">
-        <label for="query">Search by Full Name or Alias</label>
-        <br>
-        <input type="text" id="query" name="query"/>
-        <button id="search" >Search</button>
-    </form>
-
-    <h1>Result</h1>
-    <div id="result">
-        
+    <div id="title">
+        <h1>AVENGERS CHARACTER SEARCH</h1>
     </div>
+
+    <div id="container">
+        <form id="myform" action="superheroes.php" method="POST">
+            <label for="query">Search by Full Name or Alias</label>
+            <br>
+            <input type="text" id="query" name="query" placeholder="e.g. Hulk or Bruce Banner"/>
+            <button id="search" >Search</button>
+        </form>
+
+        <h2>Result</h2>
+        <div id="result">
+            
+        </div>
+    </div>
+    
     
 </body>
