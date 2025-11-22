@@ -7,5 +7,16 @@
     <script src="app.js"></script>
 </head>
 <body>
-    <button id="search">Search</button>
+    <form id="myform" action="superheroes.php" method="POST">
+        <label for="query">Search by Full Name or Alias</label>
+        <br>
+        <input type="text" id="query" name="query"/>
+        <button id="search" >Search</button>
+    </form>
+
+    <h1>Result</h1>
+    <div id="result">
+        
+    </div>
+    
 </body>
